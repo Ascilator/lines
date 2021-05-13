@@ -4,11 +4,13 @@ const lines = lines_cont.querySelectorAll('.line')
 
 
 anim();
+
 setTimeout(() => {
-    setStyles();
-}, 2000);
-setTimeout(() => {
-    init();
+    function less_go() {
+        setStyles();
+        init();
+    }
+    less_go();
 }, 2000);
 
 
